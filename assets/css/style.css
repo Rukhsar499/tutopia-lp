@@ -392,3 +392,113 @@ padding: 40px 80px;
 .footer-tetx{
   padding: 40px 20px;
 }
+.sticky-icon {
+    position: fixed;
+    top: 55%;
+    right: 1%;
+    z-index: 999;
+}
+.icon-box {
+    background-color: #0673B9;
+    box-shadow: rgba(0, 0, 0, 0.176) 0px 0px 12px;
+    margin-bottom: 5px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+}
+@media screen and (max-width: 767px) {
+  p{
+    font-size: 14px;
+  }
+  .wbs {
+    padding: 10px 10px 5px 10px;
+  }
+  .dark-blu {
+    margin-top: 50px;
+    padding: 40px 30px 0px 30px;
+}
+.win-img {
+  margin-top: 0px;
+}
+.gfs{
+  margin-bottom: 20px;
+}
+.mn{
+  font-size: 16px;
+}
+.yellows, .blues{
+  height:100%;
+  margin-top: 10px;
+}
+.exam-img{
+  margin-top: -20px;
+}
+.test-box{
+  padding: 30px;
+}
+.footer-tetx {
+    padding: 5px;
+}
+.box1 {
+    padding: 0px;
+    padding-right: 20px;
+}
+.vc{
+  border-right: none;
+}
+.me-3 {
+    margin-right: 10px !important;
+}
+.apply-box {
+  padding: 30px;
+}
+.gfd{
+  border-bottom: 1px solid #000;
+  padding: 10px 0px;
+ }
+ .gfds{
+  padding-top: 10px;
+ }
+ .box1 img{
+  width: 30px;
+}
+.how-box {
+  padding: 20px 25px;
+}
+.wk-bx {
+    padding: 0px;
+}
+.ern-bx {
+   margin-top: 50px;
+}
+.sticky-footer {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #f8f9fa;
+        box-shadow: 0 -2px 6px rgb(0 0 0 / .2);
+        z-index: 1000;
+        justify-content: space-around;
+        padding: 0;
+    }
+    .footer-btn {
+        flex: 1;
+        font-size: 14px;
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        transition: background-color .3s, transform .2s;
+        font-family: Arial, sans-serif;
+    }
+        .footer-btn.whatsapp, .sticky-contact:hover, .whatsapp, .footer-btn.phone {
+        background-color: #0673B9;
+    }
+    .contact-us{
+      background: #FDCD10;
+    background: linear-gradient(90deg, rgba(253, 205, 16, 1) 0%, rgba(255, 233, 147, 1) 50%);
+    }
+}
