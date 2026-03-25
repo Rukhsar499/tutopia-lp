@@ -516,4 +516,9 @@ padding: 40px 80px;
       background: #FDCD10;
     background: linear-gradient(90deg, rgba(253, 205, 16, 1) 0%, rgba(255, 233, 147, 1) 50%);
     }
+    .btn-close {
+    position: absolute;
+    top: -1%;
+    right: -2%;
+  }
 }
