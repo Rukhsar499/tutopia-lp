@@ -94,7 +94,7 @@ a {
   margin-bottom: 10px;
 }
 
-.form-control::placeholder {
+.form-control::placeholder, .form-select {
   color: #999;
 }
 
@@ -520,5 +520,8 @@ padding: 40px 80px;
     position: absolute;
     top: -1%;
     right: -2%;
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
   }
 }
