@@ -421,6 +421,10 @@ padding: 40px 80px;
 .modal-body{
   padding:0px;
 }
+.box1{
+  margin-left: auto;
+  margin-right: auto;
+}
 @media screen and (max-width: 767px) {
   p{
     font-size: 14px;
