@@ -59,7 +59,7 @@ a {
 .enquiry-card {
   width: 100%;
   background: #ffffff;
-  border-radius: 10px;
+  border-radius: 10px 10px 0px 0px;
   padding: 20px;
 }
 
@@ -405,6 +405,21 @@ padding: 40px 80px;
     text-align: center;
     padding: 15px;
     border-radius: 10px;
+}
+.btn-close{
+  position: absolute;
+  top: -4%;
+  right: -3%;
+   /* background: #FDCD10;
+   background: linear-gradient(83deg, rgba(253, 205, 16, 1) 0%, rgba(255, 233, 147, 1) 50%); */
+   background-color: #FDCD10;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  z-index: 999;
+}
+.modal-body{
+  padding:0px;
 }
 @media screen and (max-width: 767px) {
   p{

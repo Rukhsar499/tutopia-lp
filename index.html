@@ -27,7 +27,7 @@
           <img src="assets/img/logo.png" alt="Tutopia Learning App" width="130px">
         </div>
         <div>
-          <button type="button" class="enquire-btn">Enquire Now</button>
+          <button type="button" class="enquire-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Enquire Now</button>
         </div>
       </div>
     </div>
@@ -70,36 +70,30 @@
             <h5 class="enquiry-title">Enquiry Now!</h5>
 
             <div class="form-box">
-              <input type="text" class="form-control" placeholder="Full Name *">
-              <input type="text" class="form-control" placeholder="Phone Number *">
+              <input type="text" class="form-control" placeholder="Full Name *" required>
+              <input type="text" class="form-control" placeholder="Phone Number *" required>
 
-              <select class="form-select">
-                <option>Select Board*</option>
-                <option>CBSE</option>
-                <option>ICSE</option>
-                <option>State Board</option>
+              <select class="form-select" required>
+                <option value="">Select Board*</option>
+                <option value="WB English Medium">WB English Medium</option>
+                <option value="WB Bengali Medium">WB Bengali Medium</option>
+                <option value="Not Applicable">Not Applicable</option>
+                <option value="ICSE">ICSE</option>
+                <option value="CBSE">CBSE</option>
               </select>
 
-              <select class="form-select">
-                <option>Class*</option>
-                <option>Class 6</option>
-                <option>Class 7</option>
-                <option>Class 8</option>
+              <select class="form-select" required>
+                <option value="">Select Class*</option>
+                <option value="Class 7">Class 7</option>
+                <option value="Class 8">Class 8</option>
+                <option value="Class 9">Class 9</option>
+                <option value="Class 10">Class 10</option>
+                <option value="Class 11">Class 11</option>
+                <option value="Class 12">Class 12</option>
               </select>
 
-              <select class="form-select">
-                <option>Select School*</option>
-                <option>School 1</option>
-                <option>School 2</option>
-              </select>
-
-              <select class="form-select">
-                <option>Select Scholarship type*</option>
-                <option>Merit Based</option>
-                <option>Need Based</option>
-              </select>
+              <input type="text" class="form-control" placeholder="Enter school *" required>
             </div>
-
             <button class="submit-btn mt-3">Submit</button>
           </div>
         </div>
@@ -201,7 +195,8 @@
           </div>
           <div class="col-lg-8 col-md-8 col-12 order-lg-2 order-1">
             <h4 class="text-white">Win Scholarships Through Merit. Not Luck.</h4>
-            <h1 class="gradient-text">No coupons. No bargaining.</h1>
+            <h1 class="gradient-text d-lg-block d-none">No coupons. No bargaining.</h1>
+             <h1 class="gradient-text d-lg-none d-block">No coupons. <br> No bargaining.</h1>
           </div>
         </div>
       </div>
@@ -261,7 +256,7 @@
                   </div>
                   <div class="d-flex align-items-center mt-2 mb-2">
                     <img src="assets/img/check-button.png" alt="" width="15px" height="15px" class="me-2">
-                    <p class="mb-0" style="font-size:13px;">Verified marksheet mandatory</p>
+                    <p class="mb-0" style="font-size:13px;">Only "5000/-" Registration will be applicable</p>
                   </div>
                 </div>
               </div>
@@ -540,7 +535,7 @@
             <div class="earn-text text-center">
               <h5 style="color:#0673B9;">Don't ask for a discount.</h5>
               <h2>Earn your scholarship.</h2>
-              <button type="button" class="enquire-btn mt-3 mb-3">Register for T-SAT Now</button>
+              <button type="button" class="enquire-btn mt-3 mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Register for T-SAT Now</button>
               <p>
                 Limited seats available. Register today.
               </p>
@@ -567,12 +562,14 @@
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-              Accordion Item #1
+              Q1. How much scholarship will a student receive if he or she scores less than 55% in T-SAT exams?
+
             </button>
           </h2>
           <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-              <code>.accordion-flush</code> class. This is the first item’s accordion body.
+            <div class="accordion-body">Though the student will not be eligible for a scholarship, he or she will
+              receive the participation certificate.
+
             </div>
           </div>
         </div>
@@ -580,13 +577,12 @@
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-              Accordion Item #2
+              Q2. Is a verified marksheet mandatory for a school topper scholarship?
             </button>
           </h2>
           <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-              <code>.accordion-flush</code> class. This is the second item’s accordion body. Let’s imagine this being
-              filled with some actual content.
+            <div class="accordion-body">Yes, a verified marksheet is always necessary for a school topper scholarship.
+
             </div>
           </div>
         </div>
@@ -594,14 +590,29 @@
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-              Accordion Item #3
+              Q3. Can a student take the test from home?
+
             </button>
           </h2>
           <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-              <code>.accordion-flush</code> class. This is the third item’s accordion body. Nothing more exciting
-              happening here in terms of content, but just filling up the space to make it look, at least at first
-              glance, a bit more representative of how this would look in a real-world application.
+            <div class="accordion-body">Yes, a student can take the test from home, but it has to be with camera
+              monitoring.
+
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+              Q4. How long is the duration of the assessment?
+
+            </button>
+          </h2>
+          <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">The duration of the assessment is half an hour. So the student will get only
+              thirty minutes.
+
             </div>
           </div>
         </div>
@@ -691,7 +702,7 @@
     </div>
   </section>
 
-  <div class="sticky-footer d-lg-none d-block">
+  <div class="sticky-footer d-lg-none">
     <a href="https://api.whatsapp.com/send?phone=918282990999" target="_blank" class="footer-btn whatsapp">
       <img src="assets/img/whatsapp.png" alt="" width="25px">
     </a>
@@ -705,6 +716,49 @@
   </div>
 
 
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      
+      <div class="modal-body">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="enquiry-card">
+            <h5 class="enquiry-title">Enquiry Now!</h5>
+
+            <div class="form-box">
+              <input type="text" class="form-control" placeholder="Full Name *" required>
+              <input type="text" class="form-control" placeholder="Phone Number *" required>
+
+              <select class="form-select" required>
+                <option value="">Select Board*</option>
+                <option value="WB English Medium">WB English Medium</option>
+                <option value="WB Bengali Medium">WB Bengali Medium</option>
+                <option value="Not Applicable">Not Applicable</option>
+                <option value="ICSE">ICSE</option>
+                <option value="CBSE">CBSE</option>
+              </select>
+
+              <select class="form-select" required>
+                <option value="">Select Class*</option>
+                <option value="Class 7">Class 7</option>
+                <option value="Class 8">Class 8</option>
+                <option value="Class 9">Class 9</option>
+                <option value="Class 10">Class 10</option>
+                <option value="Class 11">Class 11</option>
+                <option value="Class 12">Class 12</option>
+              </select>
+
+              <input type="text" class="form-control" placeholder="Enter school *" required>
+            </div>
+            <button class="submit-btn mt-3">Submit</button>
+          </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
 
 
 
