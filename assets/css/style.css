@@ -425,6 +425,9 @@ padding: 40px 80px;
   margin-left: auto;
   margin-right: auto;
 }
+.footer{
+  margin-bottom: 50px;
+}
 @media screen and (max-width: 767px) {
   p{
     font-size: 14px;
@@ -532,5 +535,11 @@ padding: 40px 80px;
   .vcf{
   margin-left: 0;
   margin-right: auto;
+}
+.f-btm{
+  margin-bottom: 60px;
+}
+.footer {
+    margin-bottom: 30px;
 }
 }
