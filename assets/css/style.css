@@ -428,6 +428,7 @@ padding: 40px 80px;
 .footer{
   margin-bottom: 50px;
 }
+
 @media screen and (max-width: 767px) {
   p{
     font-size: 14px;
@@ -541,5 +542,11 @@ padding: 40px 80px;
 }
 .footer {
     margin-bottom: 30px;
+}
+.logic{
+  text-align: left;
+}
+.below{
+  padding: 7px 8px;
 }
 }
