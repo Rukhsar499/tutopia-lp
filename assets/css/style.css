@@ -421,7 +421,7 @@ padding: 40px 80px;
 .modal-body{
   padding:0px;
 }
-.box1{
+.vcf{
   margin-left: auto;
   margin-right: auto;
 }
@@ -474,6 +474,7 @@ padding: 40px 80px;
 .gfd{
   border-bottom: 1px solid #000;
   padding: 10px 0px;
+  width: 200px;
  }
  .gfds{
   padding-top: 10px;
@@ -528,4 +529,8 @@ padding: 40px 80px;
     height: 30px;
     font-size: 12px;
   }
+  .vcf{
+  margin-left: 0;
+  margin-right: auto;
+}
 }
