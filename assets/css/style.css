@@ -523,7 +523,10 @@ padding: 40px 80px;
 .gfd{
   border-bottom: 1px solid #000;
   padding: 10px 0px;
-  width: 200px;
+  width: 255px;
+ }
+ .log{
+  margin-left: 4px;
  }
  .gfds{
   padding-top: 10px;
