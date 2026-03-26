@@ -552,4 +552,10 @@ padding: 40px 80px;
 .blue-box{
   text-align: left;
 }
+.ban-li {
+  margin-left: -3px;
+}
+.enquiry-card {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
 }
