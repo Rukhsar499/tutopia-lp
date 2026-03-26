@@ -428,8 +428,53 @@ padding: 40px 80px;
 .footer{
   margin-bottom: 50px;
 }
+.blue-box {
+    position: relative;
+    transition: all 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* text smooth change */
+.blue-box {
+    padding: 6px 8px 1px 8px;   /* same padding default me de do */
+    transition: all 0.4s ease;
+}
+
+/* smooth glass hover */
+.blue-box:hover {
+    transform: translateX(6px) scale(1.02);
+   background: #fdce108a;
+        background: linear-gradient(90deg, rgba(253, 206, 16, 0.548) 0%, rgba(255, 233, 147, 0.692) 50%);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+}
+
+/* text smooth change */
+.blue-box h4 {
+    transition: all 0.4s ease;
+}
+
+
+
 
 @media screen and (max-width: 767px) {
+  .blue-box h4 {
+    transition: all 0.4s ease;
+    font-size: 18px;
+}
+.blue-box:hover {
+    transform: translateX(6px) scale(1.02);
+   background: #fdce108a;
+        background: linear-gradient(90deg, rgba(253, 206, 16, 0.548) 0%, rgba(255, 233, 147, 0.692) 50%);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+.des{
+  text-align: center;
+}
   p{
     font-size: 14px;
   }
