@@ -146,9 +146,9 @@ a {
 
 .banner {
   background-image: url(../img/banner.webp);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  padding: 200px 0px 60px 0px;
+  padding: 150px 0px 60px 0px;
 }
 
 .wbs {
