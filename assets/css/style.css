@@ -809,3 +809,9 @@ h2 {
         margin-top: -422px;
     }
 }
+@media screen and (max-width: 430px) {
+    .win-img {
+        position: relative;
+        margin-top: -489px;
+    }
+}
