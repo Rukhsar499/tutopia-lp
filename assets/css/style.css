@@ -33,9 +33,11 @@ a {
 .smatre {
   color: #d9b44a;
 }
-.facebook{
+
+.facebook {
   width: 40px;
 }
+
 .enquire-btn {
   background: #FDCD10;
   background: linear-gradient(90deg, rgba(253, 205, 16, 1) 0%, rgba(255, 233, 147, 1) 50%);
@@ -70,13 +72,14 @@ a {
   z-index: 1000;
 
   /* Modern Shadow */
-  box-shadow: 
+  box-shadow:
     0 4px 20px rgba(0, 0, 0, 0.06),
     0 1px 3px rgba(0, 0, 0, 0.08);
 
   /* Optional Glass Effect */
   backdrop-filter: blur(10px);
 }
+
 .enquiry-card {
   width: 100%;
   background: #0B6FBA;
@@ -699,8 +702,8 @@ h2 {
 
 @media screen and (max-width: 767px) {
   .banner {
-        padding: 60px 0px 60px 0px;
-    }
+    padding: 60px 0px 60px 0px;
+  }
 
   h2 {
     font-size: 27px;
@@ -746,9 +749,9 @@ h2 {
   }
 
   .win-img {
-        position: relative;
-        margin-top: -438px;
-    }
+    position: relative;
+    margin-top: -438px;
+  }
 
   .win {
     margin-top: 600px;
@@ -792,29 +795,44 @@ h2 {
     padding: 10px;
     flex: 0 0 45%;
   }
+
   .footer-tetx {
     padding: 14px 10px;
-}
+  }
 
 }
+
 @media screen and (max-width: 360px) {
-    .win-img {
-        position: relative;
-        margin-top: -402px;
-    }
+  .win-img {
+
+    margin-top: -402px;
+  }
 }
+
 @media screen and (max-width: 375px) {
-    .win-img {
-        position: relative;
-        margin-top: -422px;
-    }
+  .win-img {
+
+    margin-top: -422px;
+  }
 }
+
+@media screen and (max-width: 390px) {
+  .win-img {
+    margin-top: -440px;
+  }
+
+  .wina-text {
+    top: -147%;
+  }
+}
+
 @media screen and (max-width: 430px) {
-    .win-img {
-        position: relative;
-        margin-top: -489px;
-    }
-        .wina-text {
-        top: -151%;
-      }
+  .win-img {
+
+    margin-top: -489px;
+  }
+
+  .wina-text {
+    top: -151%;
+  }
 }
