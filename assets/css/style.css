@@ -699,8 +699,8 @@ h2 {
 
 @media screen and (max-width: 767px) {
   .banner {
-    padding: 118px 0px 60px 0px;
-  }
+        padding: 60px 0px 60px 0px;
+    }
 
   h2 {
     font-size: 27px;
@@ -795,4 +795,17 @@ h2 {
   .footer-tetx {
     padding: 14px 10px;
 }
+
+}
+@media screen and (max-width: 360px) {
+    .win-img {
+        position: relative;
+        margin-top: -402px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .win-img {
+        position: relative;
+        margin-top: -422px;
+    }
 }
