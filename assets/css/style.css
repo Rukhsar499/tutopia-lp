@@ -33,7 +33,9 @@ a {
 .smatre {
   color: #d9b44a;
 }
-
+.facebook{
+  width: 40px;
+}
 .enquire-btn {
   background: #FDCD10;
   background: linear-gradient(90deg, rgba(253, 205, 16, 1) 0%, rgba(255, 233, 147, 1) 50%);
