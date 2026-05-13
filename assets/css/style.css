@@ -802,21 +802,21 @@ h2 {
 
 }
 
-@media screen and (min-width: 360px) {
+@media screen and (max-width: 360px) {
   .win-img {
 
     margin-top: -402px;
   }
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 375px) {
   .win-img {
 
     margin-top: -422px;
   }
 }
 
-@media screen and (min-width: 390px) {
+@media screen and (max-width: 390px) {
   .win-img {
     margin-top: -440px;
   }
@@ -826,7 +826,7 @@ h2 {
   }
 }
 
-@media screen and (min-width: 430px) {
+@media screen and (max-width: 430px) {
   .win-img {
 
     margin-top: -489px;
