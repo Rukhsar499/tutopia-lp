@@ -748,10 +748,7 @@ h2 {
     height: 90px;
   }
 
-  .win-img {
-    position: relative;
-    margin-top: -438px;
-  }
+  
 
   .win {
     margin-top: 600px;
@@ -802,35 +799,12 @@ h2 {
 
 }
 
-@media screen and (max-width: 360px) {
+
+
+@media screen and (min-width: 360px) and (max-width: 430px) {
   .win-img {
-
-    margin-top: -402px;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .win-img {
-
-    margin-top: -422px;
-  }
-}
-
-@media screen and (max-width: 390px) {
-  .win-img {
-    margin-top: -440px;
-  }
-
-  .wina-text {
-    top: -147%;
-  }
-}
-
-@media screen and (max-width: 430px) {
-  .win-img {
-
-    margin-top: -489px;
-  }
+        margin-top: -437px;
+    }
 
   .wina-text {
     top: -151%;
