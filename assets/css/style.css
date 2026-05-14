@@ -740,20 +740,37 @@ h2 {
     padding: 30px;
   }
 
-  .dark-blu {
-    padding: 26px 15px 10px 15px;
-  }
-
+ .dark-blu {
+        padding: 26px 43px 0px 17px;
+    }
+.win-imgs{
+  text-align: center;
+}
+.enquiryForm{
+  margin-top: 30px;
+}
+.dots {
+    position: absolute;
+    top: -3%;
+    right: -24%;
+}
   .win-text {
     height: 90px;
   }
-
-  
-
-  .win {
+  .fds {
+   
+    margin: auto;
+}
+.win {
+    margin-top: 0px;
+  }
+  .dark-blu {
+    margin-top: 40px;
+}
+  /* .win {
     margin-top: 600px;
     position: relative;
-  }
+  } */
 
   .faq {
     padding: 0px 0px;

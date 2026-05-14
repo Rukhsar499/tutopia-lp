@@ -73,52 +73,57 @@
         </div>
         <div class="col-lg-1 col-md-1 col-1"></div>
         <div class="col-lg-4 col-md-4 col-12">
-          <div class="enquiry-card">
-            <div class="text-center">
-              <h5 class="enquiry-title">Enquiry Now!</h5>
-            </div>
+          <form class="enquiryForm">
+            <div class="enquiry-card">
+              <div class="text-center">
+                <h5 class="enquiry-title">Enquiry Now!</h5>
+              </div>
 
-            <div class="form-box">
-              <input type="text" class="form-control" placeholder="Full Name *" required>
-              <input type="text" class="form-control" placeholder="Phone Number *" required>
+              <div class="form-box">
+                <input type="text" class="form-control" placeholder="Full Name *"  name="name" required>
+                <input type="text" class="form-control" placeholder="Phone Number *"  name="phone"
+                  maxlength="10" pattern="[6-9]{1}[0-9]{9}" oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+                  autocomplete="off" required>
 
-              <select class="form-select" required>
-                <option value="">Select Board*</option>
-                <option value="WB English Medium">WB English Medium</option>
-                <option value="WB Bengali Medium">WB Bengali Medium</option>
+                <select class="form-select"  name="board" required>
+                  <option value="">Select Board*</option>
+                  <option value="WB English Medium">WB English Medium</option>
+                  <option value="WB Bengali Medium">WB Bengali Medium</option>
 
-                <option value="ICSE">ICSE</option>
-                <option value="CBSE">CBSE</option>
-              </select>
+                  <option value="ICSE">ICSE</option>
+                  <option value="CBSE">CBSE</option>
+                </select>
 
-              <select class="form-select" required>
-                <option value="">Select Class*</option>
-                <option value="Class 7">Class 7</option>
-                <option value="Class 8">Class 8</option>
-                <option value="Class 9">Class 9</option>
-                <option value="Class 10">Class 10</option>
-                <option value="Class 11">Class 11</option>
-                <option value="Class 12">Class 12</option>
-              </select>
+                <select class="form-select"  name="class_name" required>
+                  <option value="">Select Class*</option>
+                  <option value="Class 7">Class 7</option>
+                  <option value="Class 8">Class 8</option>
+                  <option value="Class 9">Class 9</option>
+                  <option value="Class 10">Class 10</option>
+                  <option value="Class 11">Class 11</option>
+                  <option value="Class 12">Class 12</option>
+                </select>
 
-              <input type="date" class="form-control" required>
-              <input type="time" class="form-control" required>
-              <!-- <select class="form-select" required>
+                <input type="date" class="form-control"  name="date" required>
+                <input type="time" class="form-control"  name="time" required>
+                <!-- <select class="form-select" required>
                 <option value="">Scholarship Type*</option>
                 <option value="Merit Based">Merit Based</option>
                 <option value="Need Based">Need Based</option>
               </select> -->
 
-              <!-- <input type="text" class="form-control" placeholder="Enter school *" required> -->
+                <!-- <input type="text" class="form-control" placeholder="Enter school *" required> -->
+              </div>
+              <button class="submit-btn" type="submit" >Submit</button>
             </div>
-            <button class="submit-btn">Submit</button>
-          </div>
+          </form>
+
         </div>
       </div>
     </div>
   </section>
 
-  <section class="win mb">
+  <section class="win mb d-lg-block d-none">
     <div class="container">
       <div class="wina-text">
         <h2 style="text-align:left">Free Academic & Career Strategy Session <br>
@@ -136,6 +141,73 @@
           </div>
           <div class="col-lg-8 col-md-9 col-12">
             <h4 class="text-white mb-4">Tomorrow's slots closing in:</h4>
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-6">
+                <div class="fds">
+                  <div class="win-text">
+                    <h2 class="mb-0">04</h2>
+                  </div>
+                  <div class="text-center">
+                    <h5 class="text-white mt-2">Hours</h5>
+                  </div>
+                  <div class="dots">:</div>
+                </div>
+
+              </div>
+              <div class="col-lg-4 col-md-4 col-6">
+                <div class="fds">
+                  <div class="win-text">
+                    <h2 class="mb-0">46</h2>
+                  </div>
+                  <div class="text-center">
+                    <h5 class="text-white mt-2">Minutes</h5>
+                  </div>
+                  <div class="dots">:</div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-6 mx-auto">
+                <div class="fds">
+                  <div class="win-text">
+                    <h2 class="mb-0">17</h2>
+                  </div>
+                  <div class="text-center">
+                    <h5 class="text-white mt-2">Seconds</h5>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4 d-flex align-items-centre justify-content-center">
+
+        <button type="button" class="enquire-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <img
+            src="assets/img/stopwatch.png" alt="" width="15px" height="15px" class="me-1" style="margin-top: -5px;">
+          Book your slot now</button>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="win mb d-lg-none d-lg-block">
+    <div class="container">
+      <div class="wina-texts">
+        <h2 style="text-align:left">Free Academic & Career Strategy Session <br>
+          For Your Child</h2>
+        <h5 style="text-align:left">
+          Structured. Practical. Outcome-Focused.
+        </h5>
+      </div>
+      <div class="dark-blu">
+        <div class="row align-items-center">
+          <div class="col-lg-4 col-md-3 col-12 order-lg-1 order-2">
+            <div class="win-imgs">
+              <img src="assets/img/boy.png" alt="girl" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-9 col-12 order-lg-2 order-1">
+            <h4 class="text-white text-center mb-4">Tomorrow's slots closing in:</h4>
             <div class="row">
               <div class="col-lg-4 col-md-4 col-6">
                 <div class="fds">
@@ -652,42 +724,50 @@
         </div>
         <div class="col-lg-1 col-md-1 col-1"></div>
         <div class="col-lg-4 col-md-4 col-12">
-          <div class="enquiry-card">
-            <div class="text-center">
-              <h5 class="enquiry-title">Enquiry Now!</h5>
-            </div>
-            <div class="form-box">
-              <input type="text" class="form-control" placeholder="Full Name *" required>
-              <input type="text" class="form-control" placeholder="Phone Number *" required>
+           <form class="enquiryForm">
+            <div class="enquiry-card">
+              <div class="text-center">
+                <h5 class="enquiry-title">Enquiry Now!</h5>
+              </div>
 
-              <select class="form-select" required>
-                <option value="">Select Board*</option>
-                <option value="WB English Medium">WB English Medium</option>
-                <option value="WB Bengali Medium">WB Bengali Medium</option>
+              <div class="form-box">
+                <input type="text" class="form-control" placeholder="Full Name *"  name="name" required>
+                <input type="text" class="form-control" placeholder="Phone Number *"  name="phone"
+                  maxlength="10" pattern="[6-9]{1}[0-9]{9}" oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+                  autocomplete="off" required>
 
-                <option value="ICSE">ICSE</option>
-                <option value="CBSE">CBSE</option>
-              </select>
+                <select class="form-select"  name="board" required>
+                  <option value="">Select Board*</option>
+                  <option value="WB English Medium">WB English Medium</option>
+                  <option value="WB Bengali Medium">WB Bengali Medium</option>
 
-              <select class="form-select" required>
-                <option value="">Select Class*</option>
-                <option value="Class 7">Class 7</option>
-                <option value="Class 8">Class 8</option>
-                <option value="Class 9">Class 9</option>
-                <option value="Class 10">Class 10</option>
-                <option value="Class 11">Class 11</option>
-                <option value="Class 12">Class 12</option>
-              </select>
-              <select class="form-select" required>
+                  <option value="ICSE">ICSE</option>
+                  <option value="CBSE">CBSE</option>
+                </select>
+
+                <select class="form-select"  name="class_name" required>
+                  <option value="">Select Class*</option>
+                  <option value="Class 7">Class 7</option>
+                  <option value="Class 8">Class 8</option>
+                  <option value="Class 9">Class 9</option>
+                  <option value="Class 10">Class 10</option>
+                  <option value="Class 11">Class 11</option>
+                  <option value="Class 12">Class 12</option>
+                </select>
+
+                <input type="date" class="form-control"  name="date" required>
+                <input type="time" class="form-control"  name="time" required>
+                <!-- <select class="form-select" required>
                 <option value="">Scholarship Type*</option>
                 <option value="Merit Based">Merit Based</option>
                 <option value="Need Based">Need Based</option>
-              </select>
+              </select> -->
 
-              <input type="text" class="form-control" placeholder="Enter school *" required>
+                <!-- <input type="text" class="form-control" placeholder="Enter school *" required> -->
+              </div>
+              <button class="submit-btn" type="submit" >Submit</button>
             </div>
-            <button class="submit-btn mt-3">Submit</button>
-          </div>
+          </form>
         </div>
       </div>
 
@@ -767,15 +847,18 @@
       <div class="modal-content">
         <div class="modal-body">
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          <div class="enquiry-card" style="border-radius:0px;">
+          <form class="enquiryForm">
+            <div class="enquiry-card" style="border-radius:0px;">
             <div class="text-center">
               <h5 class="enquiry-title">Enquiry Now!</h5>
             </div>
             <div class="form-box">
-              <input type="text" class="form-control" placeholder="Full Name *" required>
-              <input type="text" class="form-control" placeholder="Phone Number *" required>
+              <input type="text" class="form-control" placeholder="Full Name *" name="name" required>
+              <input type="text" class="form-control" placeholder="Phone Number *" name="phone"
+                  maxlength="10" pattern="[6-9]{1}[0-9]{9}" oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+                  autocomplete="off" required>
 
-              <select class="form-select" required>
+              <select class="form-select" name="board" required>
                 <option value="">Select Board*</option>
                 <option value="WB English Medium">WB English Medium</option>
                 <option value="WB Bengali Medium">WB Bengali Medium</option>
@@ -784,7 +867,7 @@
                 <option value="CBSE">CBSE</option>
               </select>
 
-              <select class="form-select" required>
+              <select class="form-select" name="class_name" required>
                 <option value="">Select Class*</option>
                 <option value="Class 7">Class 7</option>
                 <option value="Class 8">Class 8</option>
@@ -793,16 +876,15 @@
                 <option value="Class 11">Class 11</option>
                 <option value="Class 12">Class 12</option>
               </select>
-              <select class="form-select" required>
-                <option value="">Scholarship Type*</option>
-                <option value="Merit Based">Merit Based</option>
-                <option value="Need Based">Need Based</option>
-              </select>
-
-              <input type="text" class="form-control" placeholder="Enter school *" required>
+             
+               <input type="date" class="form-control" name="date" id="date" required>
+               <input type="time" class="form-control" name="time" id="time" required>
+              
             </div>
             <button class="submit-btn mt-3">Submit</button>
           </div>
+          </form>
+          
         </div>
 
       </div>
@@ -829,6 +911,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="assets/js/owl.carousel.min.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/api.js"></script>
 
 </body>
 
